@@ -4,10 +4,10 @@ Python framer and decoder blocks for processing OGN messages in GNU Radio. Inclu
 
 <h1>Installation</h1>
 
-mkdir build
-cd build
-cmake ../
-make
+mkdir build<br>
+cd build<br>
+cmake ../<br>
+make<br>
 sudo make install
 
 <h1>Usage</h1>

@@ -9,9 +9,9 @@ The following instructions will take a clean install of Ubuntu 16.04.2 to a poin
 <h2>Prerequisites</h2>
 
 sudo apt-get install gnuradio<br>
-sudo apt install git<br>
-sudo apt install cmake<br>
 sudo apt-get install libusb-1.0-0-dev<br>
+sudo apt install cmake<br>
+sudo apt install git<br>
 
 <h2>rtl-sdr</h2>
 
@@ -28,32 +28,24 @@ sudo ldconfig<br>
 
 sudo apt-get install gr-osmosdr
 
-<h2>gr-OGN</h2>
+<h2>gr-ogn</h2>
 
+git clone https://github.com/mattsnow/gr-ogn.git<br>
+cd gr-ogn/<br>
+mkdir build<br>
+cd build<br>
+cmake ../<br>
+make<br>
+sudo make install<br>
+sudo ldconfig<br>
 
-*download gr-ogn*
-
-mkdir build
-cd build
-cmake ../
-make
-sudo make install
-sudo ldconfig
+<h1>Usage</h1>
 
 Modify GRC flowchart to point to correct recorded data
 Logs will be created in home directory 
 Can set script as executable 
 Ensure JSON file is in same location as .html
-Load up .html file 
-
-
-mkdir build<br>
-cd build<br>
-cmake ../<br>
-make<br>
-sudo make install
-
-<h1>Usage</h1>
+Load up .html file
 
 Load the flowgraph from the examples directory in GNU Radio Companion. It should work out of the box and provide decoded messages to the console and to two log files. 
 

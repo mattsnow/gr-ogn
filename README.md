@@ -55,4 +55,4 @@ Navigating to http://127.0.0.1:8000 will show the directory listing. The "ogn_js
 
 To change from a simulated input to actual hardware, the blocks at the start can be enabled or disabled as appropriate. 
 
-More detailed documentation is available in the 
+More detailed documentation is available in "Aircraft Collision Avoidance Systems.pdf" in the /docs folder. 

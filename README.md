@@ -41,14 +41,16 @@ sudo ldconfig<br>
 
 <h1>Usage</h1>
 
-Modify GRC flowchart to point to correct recorded data
-Logs will be created in home directory 
-Can set script as executable 
-Ensure JSON file is in same location as .html
-Load up .html file
+1. Open the GRC flowchart found in the /examples directory.
+2. Modify the File Source block to point to test_data.bin, which is also in the /examples directory.
+3. Execute the flowgraph. The program will decode the OGN packet recorded in the sample data. 
+4. The decoded output will be displayed in the GRC Reports Panel.
+5. The decoded output will be logged to two log files that are located in the /build directory. 
 
-Load the flowgraph from the examples directory in GNU Radio Companion. It should work out of the box and provide decoded messages to the console and to two log files. 
+The decoded positions can also be viewed in a Google Maps window. To do this, webserver.sh needs to be made executable. This can be set in the properties window. Then to start the web server, navigate a console window to the same directory and enter: 
 
-By running the web server script (SimpleHTTPServer) you can open the provided web page, which will plot any received transmission. 
+./webserver.sh
+
+Navigating to http://127.0.0.1:8000 will show the directory listing. The "ogn_json" log file needs to be copied from the /build directory into the same directory as ogn_map.html. Then simply load ogn_map.html to view the plotted positions.
 
 <h3>Work on this repository is still ongoing and more documentation will be provided soon</h3>

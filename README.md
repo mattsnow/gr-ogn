@@ -1,6 +1,6 @@
 <h1>gr-ogn</h1>
 
-Python framer and decoder blocks for processing OGN messages in GNU Radio. Includes example flow graph for end-to-end processing of messages.
+Python framer and decoder for processing OGNTP messages in GNU Radio. Includes example flow graph for end-to-end processing of messages.
 
 <h1>Installation</h1>
 
@@ -53,4 +53,6 @@ The decoded positions can also be viewed in a Google Maps window. To do this, we
 
 Navigating to http://127.0.0.1:8000 will show the directory listing. The "ogn_json" log file needs to be copied from the /build directory into the same directory as ogn_map.html. Then simply load ogn_map.html to view the plotted positions.
 
-<h3>Work on this repository is still ongoing and more documentation will be provided soon</h3>
+To change from a simulated input to actual hardware, the blocks at the start can be enabled or disabled as appropriate. 
+
+More detailed documentation is available in the 
